@@ -1,0 +1,4 @@
+Este es 
+el fichero
+de texto 
+de prueba #1
