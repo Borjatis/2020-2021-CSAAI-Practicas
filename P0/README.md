@@ -7,5 +7,6 @@ Probando el VScode...
 **MI SEGUNDO CAMBIO**
 **********************
 
-Otro cambioç
+Otro cambio
+
 ![](Ejercicio2-img1.gif)
