@@ -15,8 +15,10 @@
   /* Fondo de pantalla */
 body {
    background-image: url("paisaje.gif");
-   background-repeat: repeat;
-   
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+   position: absolute;
 }
  /* Encabezado */
 .title {
@@ -36,22 +38,13 @@ body {
    padding: 15px;
    text-align: center;
 }
-/* Estilo gif */
-.gif{
-float: left;
-  width: 100px;
-  height: 100px;
-  margin: 3px;
-  padding: 3px;
-  border: black 2px solid;
- }
-
-
+/*Estilo parrafos y subtitulos*/
 .parrafos {
    font-family: "ITCAvantGardeStd Md";
    font-size: 25px;
    margin: 8px;
    padding: 15px;
+   padding-left: 40px;
  }
 h2{
    background-color: rgb(255, 115, 0);
@@ -89,6 +82,8 @@ h3{
    text-align: left;
    width: 25%;
    border-radius: 25px;
-   background-color: rgba(5, 50, 251, 0.671);
+   background-color: rgba(5, 99, 251, 0.801);
    min-height: 70vh;
+   padding-bottom: 50px;
+   margin-top: 20px;
 }
