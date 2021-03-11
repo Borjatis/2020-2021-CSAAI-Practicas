@@ -20,6 +20,7 @@ body {
    height: 100%;
    position: absolute;
 }
+
  /* Encabezado */
 .title {
    font-family: "Saiyan-Sans";
@@ -36,8 +37,14 @@ body {
 }
 #imagen {
    padding: 15px;
+   padding-right: 65px;
+   margin: auto;
+   display: block;
    text-align: center;
+   width: 250px;
+   height: 250px;
 }
+
 /*Estilo parrafos y subtitulos*/
 .parrafos {
    font-family: "ITCAvantGardeStd Md";
@@ -54,7 +61,6 @@ h2{
    font-size: 50px;
    padding-left: 20px;
  }
-
 .parrafos2 {
    font-family: "ITCAvantGardeStd Md";
    font-size: 25px;
@@ -62,6 +68,7 @@ h2{
    padding: 15px;
    color: white;
    padding-left: 50px;
+   padding-right: 20px;
  }
 h3{
    background-color: rgba(0, 0, 0, 0.603);
@@ -71,11 +78,22 @@ h3{
    font-size: 50px;
    padding-left: 20px;
  }
+
  /* Cuerpo principal */
 #principal {
    width: 70%;
    background-color: orangered;
 }
+.tablas {
+   font-family: "ITCAvantGardeStd Md";
+   font-size: 25px;
+   margin: 8px;
+   padding: 15px;
+   padding-left: 40px;
+   display: block;
+   overflow-x: auto;
+ }
+
 /* Cuerpo Secundario */
 #lateral {
    float: right;
@@ -86,4 +104,5 @@ h3{
    min-height: 70vh;
    padding-bottom: 50px;
    margin-top: 20px;
+   margin-right: 1px;
 }
