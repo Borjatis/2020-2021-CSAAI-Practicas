@@ -3,7 +3,6 @@ console.log("Ejecutando JS de Borjatis...");
 display = document.getElementById("display")
 delet = document.getElementById("delet")
 reset = document.getElementById("reset")
-coma = document.getElementById("coma")
 sqrt = document.getElementById('sqrt')
 igual = document.getElementById("igual")
 
