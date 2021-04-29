@@ -1,0 +1,11 @@
+body{
+    background-color: rgba(112, 31, 31, 0.63);
+}
+canvas {
+    background-image: url("Particles.gif");
+    background-size: cover;
+    border-style: solid;
+    border-width: 20px;
+    border-color: rgba(251, 251, 251, 0.623);
+    border-radius: 5px;
+  }
