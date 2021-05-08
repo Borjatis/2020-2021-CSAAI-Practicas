@@ -45,39 +45,6 @@ let z = 900;
 //-- Velocidad de la raqueta
 //let velw = 0;
 
-//-- Constantes de los ladrillos
-const LADRILLO = {
-  F: 2,  // Filas6
-  C: 3,  // Columnas10
-  n: 75, // Ancho
-  h: 30, // Alto
-  origen_a: 5,
-  origen_b: 170,
-  padding: 5,
-  visible: true
-};
-
-//-- Coordenadas de los ladrillos
-//let origen_a = 300;
-//let origen_b = 300;
-
-//-- Estructura de los ladrillos
-const ladrillos = [];
-
-for (let i = 0; i < LADRILLO.F; i++) {
-  ladrillos[i] = [];
-  for (let j = 0; j < LADRILLO.C; j++) {
-    ladrillos[i][j] = {
-        a: (LADRILLO.n + LADRILLO.padding) * j,
-        b: (LADRILLO.h + LADRILLO.padding) * i,
-        n: LADRILLO.n,
-        h: LADRILLO.h,
-        padding: LADRILLO.padding,
-        visible: LADRILLO.visible
-      };
-  }
-}
-
 //-- Funcion principal de animacion
 function update() 
 {
@@ -123,7 +90,7 @@ function update()
     
       if (e.key == 'Enter' && estado == ESTADO.START){
         estado = ESTADO.INIT;
-        //myAudio.play();
+        myAudio.play();
         myAudio.volume = 0.2;
       }
 
@@ -247,22 +214,7 @@ function update()
       
   ctx.closePath()
 
-  //-- Dibujar ladrillos
-for (let i = 0; i < LADRILLO.F; i++) {
-  for (let j = 0; j < LADRILLO.C; j++) {
-
-    //-- Si el ladrillo es visible se pinta
-    if (ladrillos[i][j].visible) {
-      ctx.beginPath();
-      ctx.rect(ladrillos[i][j].a, ladrillos[i][j].b, LADRILLO.n, LADRILLO.h);
-      ctx.fillStyle = 'blue';
-      ctx.fill();
-      ctx.closePath();
-    }
-  }
-}
-
-  /*ctx.beginPath();
+  ctx.beginPath();
       //-- Ladrillos rojos de dimensiones 75x30
       ctx.rect(5,170, 75, 30);
       ctx.rect(80,170, 75, 30);
@@ -423,7 +375,6 @@ for (let i = 0; i < LADRILLO.F; i++) {
       ctx.stroke()
       
   ctx.closePath()
-  */
   //-- 4) Volver a ejecutar update cuando toque
   requestAnimationFrame(update);
 }
