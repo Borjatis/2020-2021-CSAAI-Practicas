@@ -48,14 +48,16 @@ deslizadorR.oninput = () => {
   //-- Obtener el array con todos los píxeles
   let data = imgData.data
 
-  //-- Obtener el umbral de rojo del desliador
-  umbral = deslizadorR.value
-
   //-- Filtrar la imagen según el nuevo umbral
   for (let i = 0; i < data.length; i+=4) {
-    if (data[i] > umbral)
-      data[i] = umbral;
+    if (data[i] > deslizadorR.value)
+        data[i] = deslizadorR.value;
+    if (data[i+1] > deslizadorG.value)
+        data[i+1] = deslizadorG.value;
+    if (data[i+2] > deslizadorB.value)
+        data[i+2] = deslizadorB.value;
   }
+
 
   //-- Poner la imagen modificada en el canvas
   ctx.putImageData(imgData, 0, 0);
@@ -76,13 +78,14 @@ deslizadorG.oninput = () => {
     //-- Obtener el array con todos los píxeles
     let data = imgData.data
   
-    //-- Obtener el umbral de rojo del desliador
-    umbral = deslizadorG.value
-  
     //-- Filtrar la imagen según el nuevo umbral
     for (let i = 0; i < data.length; i+=4) {
-      if (data[i+1] > umbral)
-        data[i+1] = umbral;
+      if (data[i] > deslizadorR.value)
+          data[i] = deslizadorR.value;
+      if (data[i+1] > deslizadorG.value)
+          data[i+1] = deslizadorG.value;
+      if (data[i+2] > deslizadorB.value)
+          data[i+2] = deslizadorB.value;
     }
   
     //-- Poner la imagen modificada en el canvas
@@ -104,13 +107,14 @@ deslizadorB.oninput = () => {
     //-- Obtener el array con todos los píxeles
     let data = imgData.data
   
-    //-- Obtener el umbral de rojo del desliador
-    umbral = deslizadorB.value
-  
     //-- Filtrar la imagen según el nuevo umbral
     for (let i = 0; i < data.length; i+=4) {
-      if (data[i+2] > umbral)
-        data[i+2] = umbral;
+      if (data[i] > deslizadorR.value)
+          data[i] = deslizadorR.value;
+      if (data[i+1] > deslizadorG.value)
+          data[i+1] = deslizadorG.value;
+      if (data[i+2] > deslizadorB.value)
+          data[i+2] = deslizadorB.value;
     }
   
     //-- Poner la imagen modificada en el canvas
