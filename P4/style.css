@@ -1,0 +1,65 @@
+body {
+    background-image: url('fondo2.jpg');
+    background-size: cover;
+    position: absolute;
+    zoom: 67%;
+  }
+  
+  p{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+  }
+  
+  /*Recoge los tres botones posibles de filtros*/
+  button{
+    background-color: #ffee00;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 8px;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 3px 3px;
+    font-size: 25px;
+    margin: 5px 5px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  
+  /*Imagen original*/
+  #imagesrc{
+    border: #fffb02 15px solid;
+    border-style: outset;
+    border-radius: 15px;
+    margin: 30px;
+  }
+
+  #canvas{
+    border: #fffb02 15px solid;
+    border-style: outset;
+    border-radius: 15px;
+    margin: 30px;
+  }
+  
+  /*Deslizadores*/
+  #deslizador1{
+    margin:auto;
+    float:left;
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+  
+  #deslizador2{
+    margin:auto;
+    float:left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  #deslizador3{
+    margin:auto;
+    float:left;
+    padding-left: 10px;
+    padding-right: 5px;
+  }

@@ -1,1 +1,3 @@
  # Práctica 4
+Es una aplicación en javascript en el navegador que muestra una imagen, la original. A esta imagen se le aplica un filtro, que se selecciona entre dos filtros disponibles y se genera una segunda imagen con el resultado. 
+Dispone de tres filtos. Uno pulsando un botón transforma la imagen a escala de grises. El otro es un filtro de color, por umbrales. Dispone de 3 barras deslizantes para seleccionar los umbrales de cada color: rojo, verde, azul. Un umbral de 0 hace que ese color en concreto desaparezca. Una mejora que tiene es un último filtro en negativo pulsando otro botón.
