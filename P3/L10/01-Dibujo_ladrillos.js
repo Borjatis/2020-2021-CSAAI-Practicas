@@ -180,17 +180,6 @@ function update()
     x = x + velx;
     y = y + vely; 
   }
-
-  //const stop = document.getElementById("stop");
-
-    //stop.onclick = () => {
-    //-- Volver al estado inicial
-    //estado = ESTADO.INIT;
-    //bola.init();
-    //console.log('stop');
-    //scoreD=0;
-    //scoreI=0;
-    //}
     
   //-Termina cuando pierdes todas las vidas
   if (vidas == MIN_VIDAS){
