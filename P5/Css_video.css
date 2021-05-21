@@ -1,0 +1,56 @@
+/*---CSS by Borjatis---*/
+body {
+  zoom:125%;
+  background-image: url("5.jpg");
+  /*background-position-x: ;*/
+}
+#title {
+  color:#ffffff;
+  font-size: 40px;
+  font-weight: 700;
+  font-family:"Courier New";
+  margin: 0px;
+  margin-left: 80px;
+  border-radius: 200px;
+  border: #ff0000 solid;
+}
+
+input{
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  background-color: #000000;
+  border: #34a882 solid;
+  color: #fffffff1;
+}
+
+.button{
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  background-color: #000000;
+  border: #34a882 solid;
+  color: #fffffff1;
+}
+
+.button2{
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  background-color: #000000;
+  border: #34a882 solid;
+  color: #fffffff1;
+}
+
+video{
+  margin: 14.5px;
+}
